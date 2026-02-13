@@ -1,4 +1,11 @@
-# En terminal de WSL
+# Iniciar Servicios
+start-dfs.sh
+start-yarn.sh
+hive --service metastore &
+sleep 10
+hive --service hiveserver2 &
+
+# En terminal de acceder a la carpeta proyecto con Vs Code
 code ~/bigdata-spark
 
 # Dar permisos al script
